@@ -1,4 +1,6 @@
-package PACKAGE_NAME;
-
-public class NullCancelationRule {
+public class NullCancelationRule extends CancelationRule {
+    @Override
+    void cancel(Order order) {
+        return;
+    }
 }
